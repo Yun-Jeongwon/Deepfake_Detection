@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');  // cors 패키지 불러오기
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(cors());  // 모든 도메인에서의 요청을 허용
 app.use(bodyParser.json());
