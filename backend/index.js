@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');  // cors 패키지 불러오기
 
 const app = express();
 const port = 3000;
 
+app.use(cors());  // 모든 도메인에서의 요청을 허용
 app.use(bodyParser.json());
 
 // 질문 처리 엔드포인트
@@ -18,3 +20,5 @@ app.post('/ask', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+// 13.211.167.17
