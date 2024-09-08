@@ -24,7 +24,7 @@ app.post('/ask', (req, res) => {
     });
 });
 
-// 서버에 맞게 포트 수정
+// 서버에 맞게 포트 수정 필요
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
